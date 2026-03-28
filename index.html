@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <title>LWV Lernwerk - Verlag GmbH</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LWV Lernwerk - Verlag</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="wrapper">
+  <header>
+    <div class="logo"><strong>LWV Lernwerk - Verlag</strong></div>
 
-        <h1><strong>LWV Lernwerk - Verlag GmbH</strong></h1>
+    <button class="menu-toggle" id="menu-toggle">
+      ☰
+    </button>
 
-        <section>
-            <h2>Impressum</h2>
+    <nav id="nav">
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Digitale Bildung neu gedacht</h1>
+    <p>Die Moderne Lernlösung Für Fahrschulen</p>
+  </section>
+  <div class="container">
 
-            <p>LWV Lernwerk - Verlag GmbH</p>
-            <br/>
-            <p>Adresse:</p>
-            <p>Franz Eigl-Str. 18</p>
-            <p>3910 Zwettl</p>
-            <p>Österreich</p>
-            <br/>
-            <p>FN 672168 h · Handelsgericht Zwettl</p>
-            <p>UID: ATU83061927</p>
-        </section>
+    <div class="badge">Mehr über uns</div>
 
-        <section>
-            <h2>Datenschutz</h2>
+    <h2>Über uns</h2>
+    <p>
+      Der Lernwerk Verlag ist ein österreichisches Unternehmen mit Fokus auf digitale Lernlösungen und moderne
+      Bildungsmedien.
+    </p>
+    <p>
+      Unser Ziel ist es, Lernen einfacher, zugänglicher und effektiver zu gestalten.
+    </p>
 
-            <p>Verantwortlicher: LWV Lernwerk - Verlag GmbH</p>
-            <p>Kontakt: clemens@lernwerk-verlag.at</p>
-            <p>Es werden ausschließlich technisch notwendige Daten verarbeitet.</p>
-            <p>Rechte gemäß DSGVO sind gewährleistet.</p>
-        </section>
+    <h2>Unsere Mission</h2>
+    <p>
+      Bislang mussten Fahrschüler mehrere Systeme parallel nutzen: eine App zum Lernen der Prüfungsfragen,
+      Fahrtenprotokolle auf Papier sowie separate Plattformen für ihre Ausbildungsdaten.
+    </p>
+    <p>
+      Unsere Lösung vereint all diese Funktionen in einer einzigen Anwendung, um den gesamten Lern- und
+      Ausbildungsprozess deutlich zu vereinfachen.
+    </p>
 
-        <footer>
-            © 2026 LWV Lernwerk - Verlag GmbH
-        </footer>
+    <h2>Unser Produkt</h2>
+    <p>
+      Unsere App unterstützt beim strukturierten Lernen, Wiederholen und Vertiefen von Inhalten und bietet zusätzlich
+      Funktionen zur Organisation der Fahrausbildung.
+    </p>
+    <p>
+      Die Anwendung wird demnächst im Apple App Store sowie im Google Play Store verfügbar sein.
+    </p>
 
-    </div>
+    <h2>Was uns besonders macht</h2>
+    <ul>
+      <li>All-in-One Lösung für Fahrschüler</li>
+      <li>Intuitive und moderne Benutzeroberfläche</li>
+      <li>Kombination aus Lernen und Organisation</li>
+      <li>Kontinuierliche Weiterentwicklung basierend auf Nutzerfeedback</li>
+    </ul>
+
+    <h2>Wer steht dahinter?</h2>
+    <p>
+      Hinter dem Lernwerk Verlag steht ein Team aus vier Personen mit unterschiedlichen fachlichen Schwerpunkten –
+      von Softwareentwicklung über Design bis hin zur inhaltlichen Konzeption.
+    </p>
+    <p>
+      Die Kombination aus langjähriger Erfahrung und frischen Perspektiven schafft eine starke Grundlage für innovative
+      Produkte.
+    </p>
+
+    <h2>Unsere Geschichte</h2>
+    <p>
+      Die Idee zur Gründung entstand aus dem Wunsch, bestehende Lernmethoden zu verbessern und digital neu zu denken.
+    </p>
+    <p>
+      Obwohl die offizielle Gründung im Jahr 2026 erfolgte, arbeiten wir bereits seit dem Frühjahr 2024 an der
+      Entwicklung unserer ersten App.
+    </p>
+
+  </div>
+  <footer>© 2026 Lernwerk Verlag</footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
+
 </html>
