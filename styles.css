@@ -76,11 +76,13 @@ nav a:hover {
 
 .container {
     max-width: 900px;
-    margin: -30px 20px 30px 20px;
+    margin: -30px auto 30px auto;
+    width: calc(100% - 80px) !important;
     padding: 20px;
     background: white;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow-wrap: anywhere;
 }
 
 .badge {
