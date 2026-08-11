@@ -1,105 +1,385 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LWV Lernwerk - Verlag</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="logo.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/img/LWV_Logo_White-Blue_1000x1000.ico">
+<title>LWV Lernwerk-Verlag — Die digitale Lernlösung für Fahrschulen</title>
+<meta name="description" content="LWV Lernwerk-Verlag entwickelt Apps für Fahrschulen: Lernen, Fahrtenbuch und Ausbildungsdaten in einer Anwendung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="logo"><strong>LWV Lernwerk - Verlag</strong></div>
 
-    <button class="menu-toggle" id="menu-toggle">
-      ☰
-    </button>
-
-    <nav id="nav">
-      <a href="#">Startseite</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/>
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html" class="is-active">Startseite</a>
       <a href="kontakt.html">Kontakt</a>
       <a href="support.html">Support</a>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="privacy-policy.html">App Privacy Policy</a>
+      <a href="kontakt.html" class="nav-cta">Kontakt aufnehmen</a>
     </nav>
-  </header>
-  <section class="hero">
-    <h1>Digitale Bildung neu gedacht</h1>
-    <p>Die Moderne Lernlösung Für Fahrschulen</p>
-  </section>
-  <div class="container">
-
-    <div class="badge">Mehr über uns</div>
-
-    <h2>Über uns</h2>
-    <p>
-      Der Lernwerk Verlag ist ein österreichisches Unternehmen mit Fokus auf digitale Lernlösungen und moderne
-      Bildungsmedien.
-    </p>
-    <p>
-      Unser Ziel ist es, Lernen einfacher, zugänglicher und effektiver zu gestalten.
-    </p>
-
-    <h2>Unsere Mission</h2>
-    <p>
-      Bislang mussten Fahrschüler mehrere Systeme parallel nutzen: eine App zum Lernen der Prüfungsfragen,
-      Fahrtenprotokolle auf Papier sowie separate Plattformen für ihre Ausbildungsdaten.
-    </p>
-    <p>
-      Unsere Lösung vereint all diese Funktionen in einer einzigen Anwendung, um den gesamten Lern- und
-      Ausbildungsprozess deutlich zu vereinfachen.
-    </p>
-
-    <h2>Unser Produkt</h2>
-    <p>
-      Unsere App unterstützt beim strukturierten Lernen, Wiederholen und Vertiefen von Inhalten und bietet zusätzlich
-      Funktionen zur Organisation der Fahrausbildung.
-    </p>
-    <p>
-      Die Anwendung wird demnächst im Apple App Store sowie im Google Play Store verfügbar sein.
-    </p>
-
-    <h2>Was uns besonders macht</h2>
-    <ul>
-      <li>All-in-One Lösung für Fahrschüler</li>
-      <li>Intuitive und moderne Benutzeroberfläche</li>
-      <li>Kombination aus Lernen und Organisation</li>
-      <li>Kontinuierliche Weiterentwicklung basierend auf Nutzerfeedback</li>
-    </ul>
-
-    <h2>Wer steht dahinter?</h2>
-    <p>
-      Hinter dem Lernwerk Verlag steht ein Team aus vier Personen mit unterschiedlichen fachlichen Schwerpunkten –
-      von Softwareentwicklung über Design bis hin zur inhaltlichen Konzeption.
-    </p>
-    <p>
-      Die Kombination aus langjähriger Erfahrung und frischen Perspektiven schafft eine starke Grundlage für innovative
-      Produkte.
-    </p>
-
-    <h2>Unsere Geschichte</h2>
-    <p>
-      Die Idee zur Gründung entstand aus dem Wunsch, bestehende Lernmethoden zu verbessern und digital neu zu denken.
-    </p>
-    <p>
-      Obwohl die offizielle Gründung im Jahr 2026 erfolgte, arbeiten wir bereits seit dem Frühjahr 2024 an der
-      Entwicklung unserer ersten App.
-    </p>
-
   </div>
-  <footer>© 2026 Lernwerk Verlag</footer>
-  <script>
-    const toggle = document.getElementById('menu-toggle');
-    const nav = document.getElementById('nav');
+</header>
 
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="eyebrow">Fahrschul-Software</span>
+        <h1>Der ganze Weg zum Führerschein <br><em>in einer App.</em></h1>
+        <p class="hero-sub">LWV Lernwerk&#8209;Verlag entwickelt für Fahrschulen eine eigene, individuell gebrandete App: Prüfungsfragen, Fahrtenbuch und Ausbildungsdaten an einem Ort, statt in drei getrennten Systemen.</p>
+        <div class="hero-actions">
+          <a href="#ueber-uns" class="btn btn-primary">Mehr über uns</a>
+          <a href="kontakt.html" class="btn btn-ghost">Kontakt aufnehmen</a>
+        </div>
+        <!--div class="hero-meta">
+          <span><strong>2024</strong> — Entwicklungsstart</span>
+          <span><strong>2026</strong> — Gründung</span>
+          <span><strong>Sitz</strong> — Zwettl, Niederösterreich</span>
+        </div-->
+      </div>
+
+      <div class="route-card">
+        <svg viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+          <text x="150" y="40" text-anchor="middle" fill="#ffffff" opacity="0.55" font-size="13" letter-spacing="2" style="font-family: var(--font-mono), monospace;">BISHER</text>
+          <text x="465" y="40" text-anchor="middle" fill="#ffffff" opacity="0.95" font-size="13" letter-spacing="2" style="font-family: var(--font-mono), monospace;">MIT LERNWERK</text>
+
+          <!-- BISHER: verstreute, unverbundene Werkzeuge -->
+          <g transform="rotate(-8 95 150)">
+            <rect x="53" y="98" width="84" height="104" rx="8" fill="#ffffff"/>
+            <path d="M113 98 L137 118 L113 118 Z" fill="#eceefa"/>
+            <rect x="65" y="122" width="52" height="6" rx="3" fill="#c7cdfb"/>
+            <rect x="65" y="136" width="44" height="6" rx="3" fill="#e7e9fb"/>
+            <rect x="65" y="150" width="48" height="6" rx="3" fill="#e7e9fb"/>
+            <rect x="65" y="164" width="36" height="6" rx="3" fill="#e7e9fb"/>
+          </g>
+          <text x="75" y="90" text-anchor="middle" fill="#ffffff" opacity="0.85" font-size="11" style="font-family: var(--font-mono), monospace;">Zettel</text>
+
+          <g transform="rotate(7 200 100)">
+            <path d="M158 68a12 12 0 0 1 12-12h60a12 12 0 0 1 12 12v40a12 12 0 0 1-12 12h-44l-16 15v-15h-8a12 12 0 0 1-12-12V68z" fill="#ffffff"/>
+            <circle cx="184" cy="88" r="4.5" fill="#c7cdfb"/>
+            <circle cx="200" cy="88" r="4.5" fill="#c7cdfb"/>
+            <circle cx="216" cy="88" r="4.5" fill="#c7cdfb"/>
+          </g>
+          <text x="230" y="50" text-anchor="middle" fill="#ffffff" opacity="0.85" font-size="11" style="font-family: var(--font-mono), monospace;">SMS</text>
+
+          <g transform="rotate(-6 150 258)">
+            <rect x="108" y="206" width="84" height="104" rx="18" fill="#ffffff"/>
+            <path d="M133 249a3 3 0 0 1 3-3h24M133 249a3 3 0 0 0 3 3h24v-24h-24a3 3 0 0 0-3 3v21z" stroke="#0010e7" stroke-width="1.7" transform="translate(0 8)"/>
+          </g>
+          <text x="130" y="330" text-anchor="middle" fill="#ffffff" opacity="0.85" font-size="11" style="font-family: var(--font-mono), monospace;">Prüfungs-App</text>
+
+          <g transform="rotate(8 218 195)">
+            <rect x="176" y="153" width="84" height="84" rx="10" fill="#ffffff"/>
+            <rect x="176" y="153" width="84" height="18" rx="10" fill="#e7e9fb"/>
+            <circle cx="186" cy="162" r="3" fill="#c7cdfb"/>
+            <circle cx="196" cy="162" r="3" fill="#c7cdfb"/>
+            <rect x="188" y="185" width="60" height="6" rx="3" fill="#e7e9fb"/>
+            <rect x="188" y="199" width="44" height="6" rx="3" fill="#e7e9fb"/>
+            <rect x="188" y="213" width="52" height="6" rx="3" fill="#e7e9fb"/>
+          </g>
+          <text x="270" y="145" text-anchor="middle" fill="#ffffff" opacity="0.85" font-size="11" style="font-family: var(--font-mono), monospace;">Schüler-Login</text>
+
+          <!-- Pfeil: wird zu -->
+          <path d="M298 185 L326 202 L298 219" stroke="#ffb800" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- MIT LERNWERK: eine App -->
+          <rect x="390" y="95" width="150" height="270" rx="26" fill="#ffffff"/>
+          <rect x="445" y="113" width="40" height="6" rx="3" fill="#e7e9fb"/>
+
+          <circle cx="465" cy="178" r="32" fill="#0010e7"/>
+          <path d="M451 179 l10 10 20-22" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <circle cx="433" cy="235" r="7" fill="#ffb800"/>
+          <circle cx="453" cy="235" r="7" fill="#3d49ee"/>
+          <circle cx="473" cy="235" r="7" fill="#7c8cff"/>
+          <circle cx="493" cy="235" r="7" fill="#c7cdfb"/>
+
+          <rect x="415" y="260" width="100" height="8" rx="4" fill="#eceefa"/>
+          <rect x="415" y="275" width="76" height="8" rx="4" fill="#eceefa"/>
+
+          <rect x="425" y="330" width="80" height="24" rx="12" fill="#ffb800"/>
+
+          <text x="465" y="392" text-anchor="middle" fill="#ffffff" opacity="0.9" font-size="13" style="font-family: var(--font-mono), monospace;">Eine App für alles</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="lane-divider"></div>
+
+  <!-- ÜBER UNS -->
+  <section class="section" id="ueber-uns">
+    <div class="container about-grid">
+      <div>
+        <span class="eyebrow">Über uns</span>
+        <h2>Digitale Bildung neu gedacht.</h2>
+      </div>
+      <div class="about-copy">
+        <p>Der Lernwerk&#8209;Verlag ist ein österreichisches Unternehmen mit Fokus auf digitale Lernlösungen und moderne Bildungsmedien.</p>
+        <p>Unser Ziel ist es, Lernen für den Führerschein einfacher, zugänglicher und effektiver zu gestalten.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Unsere Mission</span>
+        <h2>Warum wir Lernwerk gegründet haben</h2>
+        <p>Bislang mussten Fahrschüler mehrere Systeme parallel nutzen: eine App zum Lernen der Prüfungsfragen, Fahrtenprotokolle auf Papier sowie separate Plattformen für ihre Ausbildungsdaten.</p>
+      </div>
+
+      <div class="compare">
+        <div class="compare-card">
+          <h3>Bisher</h3>
+          <ul class="compare-list">
+            <li>Separate App zum Lernen der Prüfungsfragen</li>
+            <li>Fahrtenprotokoll auf Papier</li>
+            <li>Eigene Plattform für Ausbildungsdaten</li>
+          </ul>
+        </div>
+        <div class="compare-arrow" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="compare-card is-solution">
+          <h3>Mit Lernwerk</h3>
+          <ul class="compare-list">
+            <li>Lernen, Fahrtenbuch und Ausbildungsdaten in einer Anwendung</li>
+            <li>Ein Login für Fahrschüler, Fahrlehrer und Fahrschule</li>
+            <li>Weniger Aufwand, weniger Medienbrüche</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mission-close">Unsere Lösung vereint all diese Funktionen in einer einzigen Anwendung, um den gesamten Lern- und Ausbildungsprozess, für Fahrschüler, aber auch Fahrschulen, deutlich zu vereinfachen.</p>
+    </div>
+  </section>
+
+  <!-- PRODUKT -->
+  <section class="section" id="produkt">
+    <div class="container product">
+      <div>
+        <span class="eyebrow">Unser Produkt</span>
+        <h2>Ihre App. Alles drin.</h2>
+        <p>Jede Fahrschule erhält ihre eigene App auf Basis unserer Plattform mit eigenem Namen, eigenem Logo und eigenen Farben. Ihre Fahrschüler lernen, protokollieren Fahrstunden und organisieren ihre Ausbildung, ganz unter Ihrer Marke.</p>
+
+        <ul class="check-list">
+          <li>Individuelles Branding Ihrer Fahrschule</li>
+          <li>Lernmodul für die Prüfungsfragen</li>
+          <li>Push-Benachrichtigungen</li>
+          <li>Digitales Fahrtenbuch</li>
+          <li>Terminorganisation</li>
+        </ul>
+
+        <a href="kontakt.html" class="btn btn-primary">Jetzt Kontakt aufnehmen</a>
+      </div>
+
+      <div class="product-panel">
+        <div class="concept-diagram">
+          <svg viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- connectors (drawn first, hidden under the circles at both ends) -->
+            <path d="M104 138 L 224 232" stroke="#c7cdfb" stroke-width="2" stroke-dasharray="5 7"/>
+            <path d="M296 138 L 176 232" stroke="#c7cdfb" stroke-width="2" stroke-dasharray="5 7"/>
+            <path d="M104 382 L 224 288" stroke="#c7cdfb" stroke-width="2" stroke-dasharray="5 7"/>
+            <path d="M296 382 L 176 288" stroke="#c7cdfb" stroke-width="2" stroke-dasharray="5 7"/>
+
+            <!-- node 1: Lernmodul -->
+            <circle cx="104" cy="104" r="36" fill="#ffffff" stroke="#dcdff6" stroke-width="1.5"/>
+            <path d="M92 92.5A2.5 2.5 0 0 1 94.5 90H115M92 92.5A2.5 2.5 0 0 0 94.5 95H115V79H94.5A2.5 2.5 0 0 0 92 81.5v11z" stroke="#0010e7" stroke-width="1.6" transform="translate(-1 10)"/>
+            <text x="104" y="156" text-anchor="middle" fill="#333756" font-size="13" style="font-family: var(--font-mono), monospace;">Lernmodul</text>
+
+            <!-- node 2: Fahrtenbuch -->
+            <circle cx="296" cy="104" r="36" fill="#ffffff" stroke="#dcdff6" stroke-width="1.5"/>
+            <path d="M280 98h32M280 104h32M280 110h22" stroke="#0010e7" stroke-width="1.8" stroke-linecap="round"/>
+            <text x="296" y="156" text-anchor="middle" fill="#333756" font-size="13" style="font-family: var(--font-mono), monospace;">Fahrtenbuch</text>
+
+            <!-- hub: Ihre App -->
+            <circle cx="200" cy="260" r="48" fill="#0010e7"/>
+            <rect x="188" y="240" width="24" height="38" rx="4" fill="none" stroke="#ffffff" stroke-width="2"/>
+            <circle cx="200" cy="270.5" r="1.8" fill="#ffffff"/>
+            <text x="200" y="330" text-anchor="middle" fill="#0a0e27" font-size="15" font-weight="600" style="font-family: var(--font-display), sans-serif;">Ihre App</text>
+
+            <!-- node 3: Termine -->
+            <circle cx="104" cy="416" r="36" fill="#ffffff" stroke="#dcdff6" stroke-width="1.5"/>
+            <rect x="88" y="400" width="32" height="26" rx="3" stroke="#0010e7" stroke-width="1.6"/>
+            <path d="M88 408h32M95 396v8M113 396v8" stroke="#0010e7" stroke-width="1.6" stroke-linecap="round"/>
+            <text x="104" y="468" text-anchor="middle" fill="#333756" font-size="13" style="font-family: var(--font-mono), monospace;">Termine</text>
+
+            <!-- node 4: Branding -->
+            <circle cx="296" cy="416" r="36" fill="#ffffff" stroke="#dcdff6" stroke-width="1.5"/>
+            <circle cx="296" cy="412" r="13" fill="none" stroke="#0010e7" stroke-width="1.6"/>
+            <circle cx="291" cy="407" r="2.4" fill="#ffb800"/>
+            <circle cx="301" cy="407" r="2.4" fill="#3d49ee"/>
+            <circle cx="296" cy="417" r="2.4" fill="#7c8cff"/>
+            <text x="296" y="468" text-anchor="middle" fill="#333756" font-size="13" style="font-family: var(--font-mono), monospace;">Branding</text>
+          </svg>
+        </div>
+        <p class="concept-caption">Vier Bereiche, ein Login, eine App: Unter Ihrem Namen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Was uns besonders macht</span>
+        <h2>Vier Gründe für Lernwerk</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>All-in-One Lösung</h3>
+          <p>Für Fahrschüler alles, was für die Ausbildung gebraucht wird, an einem Ort.</p>
+        </article>
+        <article class="feature-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 6h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <h3>Intuitiv &amp; modern</h3>
+          <p>Eine klare, moderne Benutzeroberfläche, die ohne Einschulung funktioniert.</p>
+        </article>
+        <article class="feature-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Lernen + Organisation</h3>
+          <p>Prüfungsvorbereitung und Ausbildungsorganisation in einer Anwendung kombiniert.</p>
+        </article>
+        <article class="feature-card">
+          <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 1 3.5 7.1M3 12v6M3 12h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Ständig in Entwicklung</h3>
+          <p>Kontinuierliche Weiterentwicklung, direkt auf Basis von Nutzerfeedback.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-dark">
+    <div class="container team-wrap">
+      <div class="team-stat">
+        <span class="num">4</span>
+        <span class="label">Köpfe hinter Lernwerk</span>
+        <div class="discipline-row">
+          <span class="discipline-chip">Softwareentwicklung</span>
+          <span class="discipline-chip">Design</span>
+          <span class="discipline-chip">Inhaltliche Konzeption</span>
+          <span class="discipline-chip">Infrastruktur</span>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">Wer steht dahinter?</span>
+        <h2>Ein kleines Team mit klarem Fokus.</h2>
+        <p>Hinter dem Lernwerk&#8209;Verlag steht ein Team aus vier Personen mit unterschiedlichen fachlichen Schwerpunkten von Softwareentwicklung über Design bis hin zur inhaltlichen Konzeption.</p>
+        <p>Die Kombination aus langjähriger Erfahrung und frischen Perspektiven schafft eine starke Grundlage für innovative Produkte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GESCHICHTE -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Unsere Geschichte</span>
+        <h2>Vom Gedanken zur App</h2>
+        <p>Die Idee zur Gründung entstand aus dem Wunsch, bestehende Lernmethoden zu verbessern und digital neu zu denken.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">April 2024</span>
+          <h3>Entwicklung beginnt</h3>
+          <p>Start der Arbeiten an unserer ersten App</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Juni 2025</span>
+          <h3>Abschluss der Diplomarbeit</h3>
+          <p>Die Diplomarbeit wurde abgeschlossen, doch das war erst der Anfang der App</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Jänner 2026</span>
+          <h3>Offizielle Gründung</h3>
+          <p>Der Lernwerk&#8209;Verlag wird offiziell nach zwei Jahren Entwicklungsarbeit gegründet</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">April 2026</span>
+          <h3>Erste Interne Testversion auf iOS & Android</h3>
+          <p>Die ersten erfolgreichen Tests wurden gestartet</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Juni 2026</span>
+          <h3>Bereit für ihre Nutzung</h3>
+          <p>Erste Fahrschüler nutzen die App</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Bereit, Ihre Fahrschule zu digitalisieren?</h2>
+          <p>Erzählen Sie uns von Ihrer Fahrschule, wir melden uns schnellstmöglich zurück.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="kontakt.html" class="btn btn-on-dark">Kontakt aufnehmen</a>
+          <a href="support.html" class="btn btn-ghost-on-dark">Zum Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/></a>
+        <p>Digitale Lernlösungen und moderne Bildungsmedien für Fahrschulen aus Österreich.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="privacy-policy.html">App Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li class="muted">Franz Eigl-Str. 18, 3910 Zwettl</li>
+          <li><a href="tel:+43282222022">+43 2822 220022</a></li>
+          <li><a href="mailto:office@lernwerk-verlag.at">office@lernwerk-verlag.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LWV Lernwerk-Verlag GmbH</span>
+      <span>LWV Lernwerk&#8209;Verlag GmbH · Zwettl, Österreich</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>

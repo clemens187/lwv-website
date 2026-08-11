@@ -1,62 +1,114 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/img/LWV_Logo_White-Blue_1000x1000.ico">
+<title>Kontakt — LWV Lernwerk-Verlag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo"><strong>LWV Lernwerk - Verlag</strong></div>
 
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
-        </button>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/>
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Startseite</a>
+      <a href="kontakt.html" class="is-active">Kontakt</a>
+      <a href="support.html">Support</a>
+      <a href="kontakt.html" class="nav-cta">Kontakt aufnehmen</a>
+    </nav>
+  </div>
+</header>
 
-        <nav id="nav">
-            <a href="/">Startseite</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="support.html">Support</a>
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-            <a href="privacy-policy.html">App Privacy Policy</a>
-        </nav>
-    </header>
-    <div class="spacer"></div>
+<main>
+  <section class="simple-hero">
     <div class="container">
-        <h1>Kontakt</h1>
-        <h2>Wir freuen uns auf Ihre Nachricht</h2>
-        <p>Sie haben Fragen zu unseren Leistungen, wünschen ein unverbindliches Angebot oder möchten ein persönliches Gespräch vereinbaren? Kontaktieren Sie uns – wir helfen Ihnen gerne weiter.</p>
-        <h2>Kontaktdaten</h2>
-        <p>Adresse:</p>
-        <p class="indent">
-            Franz Eigl-Str. 18<br />
-            3910 Zwettl<br />
-            Österreich
-        </p>
-        <p>Tel: +43 2822 220022</p>
-        <p>E-Mail: office@lernwerk-verlag.at</p>
-        <h2>Öffnungszeiten</h2>
-        <p>Montag bis Freitag:</p>
-        <p>09:00-12:00 und 13:00-18:00 Uhr</p>
-        <p>Wir freuen uns auf Ihre Anfrage und melden uns schnellstmöglich bei Ihnen zurück.</p>
-        
-
+      <span class="eyebrow">Kontakt</span>
+      <h1 style="font-size:clamp(30px,4vw,44px); max-width:16ch;">Wir freuen uns auf Ihre Nachricht.</h1>
+      <p>Sie haben Fragen zu unseren Leistungen, wünschen ein unverbindliches Angebot oder möchten ein persönliches Gespräch vereinbaren? Kontaktieren Sie uns, wir helfen Ihnen gerne weiter.</p>
     </div>
-    <footer>© 2026 Lernwerk Verlag</footer>
-    <script>
-        const toggle = document.getElementById('menu-toggle');
-        const nav = document.getElementById('nav');
+  </section>
 
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-    </script>
+  <section class="section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6.1-7-11.3A7 7 0 0 1 19 9.7C19 14.9 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.3" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Adresse</h3>
+          <p>Franz Eigl-Str. 18<br>3910 Zwettl<br>Österreich</p>
+        </div>
+        <div class="info-card">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2.1.7 3a2 2 0 0 1-.5 2.1L8 10.1a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .6 3 .7a2 2 0 0 1 1.6 2z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <h3>Telefon</h3>
+          <p><a href="tel:+43282222022">+43 2822 220022</a></p>
+        </div>
+        <div class="info-card">
+          <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>E-Mail</h3>
+          <p><a href="mailto:office@lernwerk-verlag.at">office@lernwerk-verlag.at</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">Öffnungszeiten</span>
+        <h2 style="font-size:26px;">Montag bis Freitag</h2>
+        <p style="font-family:var(--font-mono); font-size:15px; color:var(--ink);">09:00–12:00 Uhr &amp; 13:00–18:00 Uhr</p>
+        <p>Wir freuen uns auf Ihre Anfrage und melden uns schnellstmöglich bei Ihnen zurück.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/></a>
+        <p>Digitale Lernlösungen und moderne Bildungsmedien für Fahrschulen aus Österreich.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="privacy-policy.html">App Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li class="muted">Franz Eigl-Str. 18, 3910 Zwettl</li>
+          <li><a href="tel:+43282222022">+43 2822 220022</a></li>
+          <li><a href="mailto:office@lernwerk-verlag.at">office@lernwerk-verlag.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lernwerk Verlag</span>
+      <span>LWV Lernwerk&#8209;Verlag GmbH · Zwettl, Österreich</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>

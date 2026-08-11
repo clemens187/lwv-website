@@ -1,64 +1,120 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="assets/img/LWV_Logo_White-Blue_1000x1000.ico">
+<title>Impressum — LWV Lernwerk-Verlag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <header>
-        <div class="logo"><strong>LWV Lernwerk - Verlag</strong></div>
 
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
-        </button>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/>
+    </a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    <nav class="main-nav">
+      <a href="index.html">Startseite</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="support.html">Support</a>
+      <a href="kontakt.html" class="nav-cta">Kontakt aufnehmen</a>
+    </nav>
+  </div>
+</header>
 
-        <nav id="nav">
-            <a href="/">Startseite</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="support.html">Support</a>
-            <a href="impressum.html">Impressum</a>
-            <a href="datenschutz.html">Datenschutz</a>
-            <a href="privacy-policy.html">App Privacy Policy</a>
-        </nav>
-    </header>
-    <div class="spacer"></div>
+<main>
+  <section class="page-hero">
     <div class="container">
-        <h1>Impressum</h1>
-        <img src="logo/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="lwv-logo">
-        <p>LWV Lernwerk - Verlag GmbH</p>
-        <ul>
-            <li>Lehrmittelverlag</li>
-            <li>Entwicklung und Weiterentwicklung von Softwareprodukten</li>
-            <li>Handel mit Waren aller Art</li>
-        </ul>
-        <p>UID-Nr: ATU83061927</p>
-        <p>FN: 672168 h</p>
-        <p>FB-Gericht: Zwettl</p>
-        <p>Sitz:</p>
-        <p class="indent">
-            Franz Eigl-Str. 18<br />
-            3910 Zwettl<br />
-            Österreich
-        </p>
-        <p>Tel: +43 2822 220022</p>
-        <p>E-Mail: office@lernwerk-verlag.at</p>
-
+      <span class="eyebrow">Rechtliches</span>
+      <h1>Impressum</h1>
     </div>
-    <footer>© 2026 Lernwerk Verlag</footer>
-    <script>
-        const toggle = document.getElementById('menu-toggle');
-        const nav = document.getElementById('nav');
+  </section>
 
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-    </script>
+  <section class="container">
+    <div class="legal">
+      <aside class="legal-toc" aria-label="Inhalt">
+        <a href="#unternehmen">Unternehmen</a>
+        <a href="#register">Registerdaten</a>
+        <a href="#sitz">Sitz</a>
+        <a href="#kontakt-legal">Kontakt</a>
+      </aside>
+
+      <div class="legal-body">
+        <h2 id="unternehmen">Unternehmen</h2>
+        <div class="legal-org">
+          <span class="tag">Firmenwortlaut</span>
+          <strong>LWV Lernwerk&nbsp;-&nbsp;Verlag GmbH</strong>
+        </div>
+        <ul>
+          <li>Lehrmittelverlag</li>
+          <li>Entwicklung und Weiterentwicklung von Softwareprodukten</li>
+          <li>Handel mit Waren aller Art</li>
+        </ul>
+
+        <h2 id="register">Registerdaten</h2>
+        <table class="data-table">
+          <tbody>
+            <tr><th>UID-Nr.</th><td>ATU83061927</td></tr>
+            <tr><th>FN</th><td>672168 h</td></tr>
+            <tr><th>FB-Gericht</th><td>Zwettl</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="sitz">Sitz</h2>
+        <p>Franz Eigl-Str. 18<br>3910 Zwettl<br>Österreich</p>
+
+        <h2 id="kontakt-legal">Kontakt</h2>
+        <p>Tel: <a href="tel:+43282222022" style="color:var(--blue); font-weight:600;">+43 2822 220022</a><br>
+        E-Mail: <a href="mailto:office@lernwerk-verlag.at" style="color:var(--blue); font-weight:600;">office@lernwerk-verlag.at</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/img/LWV_LERNWERK_VERLAG_Logo_White-Blue_1920x640.webp" class="logo_full"/></a>
+        <p>Digitale Lernlösungen und moderne Bildungsmedien für Fahrschulen aus Österreich.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="privacy-policy.html">App Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li class="muted">Franz Eigl-Str. 18, 3910 Zwettl</li>
+          <li><a href="tel:+43282222022">+43 2822 220022</a></li>
+          <li><a href="mailto:office@lernwerk-verlag.at">office@lernwerk-verlag.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lernwerk Verlag</span>
+      <span>LWV Lernwerk&#8209;Verlag GmbH · Zwettl, Österreich</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
